@@ -18,6 +18,6 @@ while (aux!="")                 //El usuario Crea el array
 
 for (i=((pp.length)-1); i >= 0; i--)     //desde cantidad de elementos -1 hasta cero
     {
-    ppaux.push(pp[i]);            //[3]->0; [2]->1; [1]->2; [0]-> 3 
+    ppaux.push(pp[i]);            //[3]->0; [2]->1; [1]->2; [0]-> 3 ...
     
     } 
