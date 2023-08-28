@@ -1,0 +1,6 @@
+Subir archivo a un branch
+=========================
+
+1) git add . //Agregar stage
+2) git commit -m "texto" //agrega el stage al repo local
+3) git push origin nombre_branch //subirlo a github (Brunch main)
