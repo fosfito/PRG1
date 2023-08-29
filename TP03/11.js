@@ -1,3 +1,5 @@
+// TP 03.11 Realiza un script que invierta los datos de un arreglo.
+
 let aux=2                     //variable para el ingreso por teclado y auxiliar para revertir
 const pp =[]                //Array 
 const ppaux= []               //array auxiliar
