@@ -21,8 +21,12 @@ while (numero!="f")
     }
     aux++;
 }
+
+//EL PRIMER ELEMENTO DEL ARRAY SERA EL MAYOR Y EL MENOR AL COMENZAR
 menor=arraynum[0];
 mayor=arraynum[0];
+
+//BUSCO EN EL RESTO DEL ARRAY SI HAY OTROS MAYORES Y MENORES
 for (let index = 1; index < arraynum.length; index++) 
 {
    if (arraynum[index]>mayor) 
@@ -49,4 +53,4 @@ console.log("==========")
 console.log("el menor es: "+menor);
 console.log("Su posicion de ingreso es:"+posmenor)
 
-console.log(arraynum);
+
