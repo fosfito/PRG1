@@ -8,7 +8,7 @@ let posmayor=0;             // Variable para la posicion del mayor
 let posmenor=0;             // Variable para la posicion del menor
 let menor=0;                // Variable para menor
 const arraynum =[];         //Variable tipo array con los valores
-Aux=0;                      //Variable de propositos multiples (Auxiliar)
+let aux=0;                      //Variable de propositos multiples (Auxiliar)
 let numero=0;               //Variable para ingresar el array
 
 // Ingreso del array hasta presionar la tecla f 
@@ -21,4 +21,32 @@ while (numero!="f")
     }
     aux++;
 }
+menor=arraynum[0];
+mayor=arraynum[0];
+for (let index = 1; index < arraynum.length; index++) 
+{
+   if (arraynum[index]>mayor) 
+   { 
+    mayor=arraynum[index];
+    posmayor=index+1;
+   }
+
+   if (arraynum[index]<menor) 
+   {
+    menor=arraynum[index]; 
+    posmenor=index+1;
+   }
+    
+}
+
+//Salidas en pantalla de lo solicitado
+console.log("==========")
+console.log("el array esta formado por: "+arraynum);
+console.log("==========")
+console.log("el mayor es: "+mayor);
+console.log("Su posicion de ingreso es:"+posmayor)
+console.log("==========")
+console.log("el menor es: "+menor);
+console.log("Su posicion de ingreso es:"+posmenor)
+
 console.log(arraynum);
