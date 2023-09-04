@@ -9,7 +9,7 @@ let igual=1;
 let i=0;
 
 // ARMADO DEL ARRAY
-while (letra!="zz")   
+while (letra!=="zz")   
 {
     if (frase[i]!="ZZ")frase[i]=prompt("Ingrese una letra, para finalizar ingrese zz");
     i++;
