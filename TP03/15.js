@@ -11,20 +11,30 @@ let i=0;
 // ARMADO DEL ARRAY
 while (letra!=="zz")   
 {
-    if (frase[i]!="ZZ")frase[i]=prompt("Ingrese una letra, para finalizar ingrese zz");
-    i++;
+    letra=prompt("Ingrese una letra, para finalizar ingrese zz");
+    if (letra!="zz")
+    {
+        
+        frase[i]=letra
+        i++;
+    }
 }
 
 // VERIFICO SI ES PALINDROMO
 for (let i = 0; i < frase.length; i++) 
 {
-    if (frase[i]!=" ");   // Si no es un espacio vacio procedo a comparar
+    //    if (frase[i]!=" ");   // Si no es un espacio vacio procedo a comparar
     {
-        if (frase[i]!=frase[i-frase.length]) igual=0;    // Si un caracter es distinto a si complemento, la bandera igual vale 0 (No hay coincidencia)
+        
+        if (frase[i]!=frase[(frase.length)-1-i]) igual=0;    // Si un caracter es distinto a su complemento, la bandera igual vale 0 (No hay coincidencia)
+ 
+        /*{
+            console.log("Paso "+frase[(frase.length)-1-i])
+        }*/
     }
 }
 
-if (igual==1) 
+if (igual==0) 
 {
     console.log("El texto "+ frase + " NO es palindromo")
 }
