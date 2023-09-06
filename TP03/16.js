@@ -9,7 +9,7 @@ let letra="";
 let i=0;
 let iguales = true;
 
-// Ingrreso la primer lista a1
+// Ingreso la primer lista "a1"
 while (letra!=="zz")   
 {
     letra=prompt("Ingrese un elemento para el array 1, para finalizar ingrese zz");
@@ -21,7 +21,7 @@ while (letra!=="zz")
     }
 }
 
-// Ingrreso la segunda lista a2
+// Ingrreso la segunda lista "a2"
 letra="";
 i=0;
 while (letra!=="zz")   
@@ -29,28 +29,27 @@ while (letra!=="zz")
     letra=prompt("Ingrese un elemento para el array 2, para finalizar ingrese zz");
     if (letra!="zz")
     {
-        
         a2[i]=letra
         i++;
     }
 }
 
 //Comienzo a verificar si los arrays son iguales.
-if (a1.length!=a2.length) 
+if ((a1.length)!=(a2.length)) 
     {
-        iguales=false;  //si el largo de los dos arrays es diferentes los marco como distintos
+        iguales=false;  //si el largo de los dos arrays es diferente los marco como distintos
     }
 else
 //Si el largo es igual, los recorro posicion a posicion comparando        
     {   
         for (let i = 0; i < a1.length; i++) 
         {
-            if( (a1[i]!=a2[i]) || iguales==true) iguales=false;
+            if( (a1[i]!=a2[i]) && iguales==true) iguales=false;
         }
     }
 
     //muestro el resultado de lo calculado
-    if (iguales=true) 
+    if (iguales==true) 
     {
     console.log("Los vectores son iguales");    
     }
