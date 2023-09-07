@@ -84,3 +84,33 @@ for (j = 0; j < a1.length; j++)
 
 //AHORA DEBO REPETIR LA BUSQUEDA DE CADA ELEMENTO DEL VECTOR CONTRARIO A2 DENTRO DEL VECTOR A1
 // SE INVIERTEN LOS ROLES
+
+//Empiezo comparando los elementos del segundo array contra el primero
+for (j = 0; j < a2.length; j++) 
+{
+    for (let i = 0; i < a1.length; i++) 
+        {
+            if (a2[i]!=a1[j]) 
+            {
+                coincide=false;
+            }
+    
+        }
+    //TERMINO LA COMPARACION DE UN ELEMENTO CONTRA TODO EL OTRO ARRAY, SI NO ESTÁ
+    //LA VARIABLE RESULTADO VALDRA FALSE 
+    if (coincide==false)
+     {
+        resultado=false   
+     }
+}
+
+// Ahora solo muestro en pantalla si coincide Resultado=true o si no coincide resultado=false
+
+if (resultado=false)    //corregir
+{
+    console.log("Los arrays no contienen los mismos elementos entre si");
+}
+else
+{
+    console.log("Los arrays contienen los mismos elementos");
+}
