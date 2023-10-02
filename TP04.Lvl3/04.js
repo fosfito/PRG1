@@ -1,6 +1,6 @@
 /*
 Escriba una función arrayOfRgbColors que devuelva cualquier cantidad de
-colores RGB en una matriz.
+colores RGB en un array.
 */
 
 //defino variables
