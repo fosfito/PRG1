@@ -16,16 +16,19 @@ let letra=""    //almaceno el primer char de la palabra/oracion
 function copia(pal)
     {
       letra=pal.charCodeAt(0);  //obtengo el ascii del primer elemento de la oracion (Puede ser letra o no)
-      
+      console.log("Letra= "+letra)
       if ((letra<123)&&(letra>96)) //si el ascii da entre 96y123 es una letra minuscula
         {
             letra=parseInt(letra)-32  //si es minuscula, le resto 32 para ir al ascii mayuscula (TABLA ASCII)
             console.log("Ascii final:"+letra)
         }
         
-        pal[0]=String.fromCharCode(letra)  //coloco en el primer elemento el char 
-        console.log("CHARCODE: "+String.fromCharCode(letra));
+        letra=String.fromCharCode(letra)  //coloco en el primer elemento el char 
+        console.log("La letra sera: "+letra);
+    
+        pal[0]=String.fromCharCode(parseInt(letra));
         console.log("Final: "+pal[0]);
+        console.log("Final TOTAL: "+pal);
       return(pal)
     }
 
