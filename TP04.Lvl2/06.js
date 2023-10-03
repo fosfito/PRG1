@@ -19,8 +19,7 @@ function reverseArray(v1)
     aux=v1[i];
     v1[i]=v1[v1.length-1-i]
     v1[(v1.length-1)-i]=aux
-    }
-    
+    }   
     return(v1)
 }
 
