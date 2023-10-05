@@ -12,10 +12,8 @@ let letra=""    //almaceno el primer char de la palabra/oracion
 //definicion de funciones
 function copia(pal)
     {
-        pal=pal.split("");  //convierto el string a array para poder reemplzar la mayuscula dentro del mismo  
-        pal[0]=pal[0].charAt(0).toUpperCase();
-          console.log("Final TOTAL: "+pal);
-      return(pal)
+      return(pal.charAt(0).toUpperCase() + pal.slice(1));
+
     }
 
 //main
