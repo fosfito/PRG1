@@ -18,8 +18,16 @@ function copia(pal)
         let abcmin="abcdefghijklmñopqrstuvwxyz";
         let abcmay="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
         let letra="";    //almaceno el primer char de la palabra/oracion
+        const palarray = [];  //en este array voy a desmembrar la oracion
         letra=pal[0];
         console.log("La letra individualizada es: "+letra);
+
+        //convierto la palabra a array
+        for (let j = 0; j < pal.length; j++) 
+        {
+            const element = array[j];
+            
+        }
         for (let i = 0; i < abcmay.length; i++) 
         {
             if(letra==abcmin[i])
@@ -28,7 +36,7 @@ function copia(pal)
             }    
             
         }
-        pal[0]=letra
+        //pal[0]=letra
         return(pal)
 
     }
