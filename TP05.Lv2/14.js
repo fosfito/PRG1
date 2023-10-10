@@ -1,15 +1,14 @@
-let valores=0;
+//devuelve la suma de los argumentos que le pase
+const arg=[1,2,3,4]
 
-function suma(ar)
+function sumatutti(arg)
 {
-    let suma=0;
-    for (let i = 0; i < ar.length; i++) 
-    {
-        suma+= parseInt(ar[i]);
+    let sum=0;
+    for (let i = 0; i < arg.length; i++) {
+        sum+=arg[i];
         
     }
-    return suma;
+    return sum
 }
 
-array=prompt("Ingrese los valores");
-alert("La suma de los valores da:"+suma(array))
+alert(sumatutti(arg))
